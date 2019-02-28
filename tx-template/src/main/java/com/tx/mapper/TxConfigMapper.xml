@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tx.mapper.TxConfigMapper">
+
+    <insert id="insert" parameterType="com.tx.bean.TxConfig">
+      insert into  tx_config
+      (`key`, `value`)
+      value
+      (#{key}, #{value})
+    </insert>
+
+    <select id="list" resultType="com.tx.bean.TxConfig">
+      select * from tx_config
+    </select>
+</mapper>
