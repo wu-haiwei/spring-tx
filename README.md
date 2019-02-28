@@ -1,4 +1,4 @@
-# spring-tx
+# spring-tx  spring事务控制方式
 
 - **tx-annotation    注解式事务**
 
