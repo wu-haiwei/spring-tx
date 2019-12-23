@@ -44,6 +44,8 @@ public class TxConfigServiceImpl implements ITxConfigService {
 
         int a = 12 / 0;
 
+        System.out.println(a);
+
         config.setKey("4").setValue("DD");
         configMapper.insert(config);
 
