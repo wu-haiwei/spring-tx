@@ -28,7 +28,10 @@ public class TxConfigServiceImpl implements ITxConfigService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void insertBatch() {
+        batchInsert();
+    }
 
+    private void batchInsert(){
         TxConfig config = new TxConfig();
         config.setKey("1").setValue("AA");
         configMapper.insert(config);
